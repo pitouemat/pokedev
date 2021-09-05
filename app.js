@@ -41,6 +41,16 @@ const pokemonFetch = () => {
         let height = document.getElementById('height')
         height.innerHTML = "Height: " + dados.height  / 10 + " M"
 
+        let btn = document.getElementById('btn')
+
+        let a = document.getElementById('pokedex')
+        a.setAttribute("href", `https://www.pokemon.com/br/pokedex/${name}`);
+      
+        btn.style.visibility = 'visible'
+
+        window.onload = function(){
+            document.getElementById('pokedex').click();
+        }
         shiny.addEventListener("change", ()=> {
             if(shiny.checked){
                  sprite =  dados.sprites.front_shiny

@@ -148,3 +148,30 @@ h1{
      text-transform: capitalize;
      color: rgba(255, 255, 255, 0.753);
  }
+
+ .box-pokemon .pokemon-text button{
+     margin-top: 10px;
+     background:rgba(255, 228, 196, 0);
+     border: 1px rgb(255, 255, 255) solid; 
+     
+     border-radius: 4px;
+     font-family: sans-serif;
+     visibility: hidden;
+     
+ }
+
+ .pokemon-text button a{
+     color: #FFF;
+     text-decoration: none;
+     font-size: 16pt;
+     padding: 5px;
+     
+ }
+
+ .box-pokemon .pokemon-text button:hover{
+     background: #FFF;
+ }
+
+ .pokemon-text button a:hover{
+     color: rgb(217, 54, 50);
+ }
