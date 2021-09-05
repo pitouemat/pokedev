@@ -4,17 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeWEB</title>
-
+    <title>PokeInfo</title>
+    <script src="https://kit.fontawesome.com/669bcf34d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="">PokeInfo</a>
+            <button>
+                 <i class="fas fa-2x fa-arrow-circle-left"></i>
+            </button>            
+        </div>
 
-    <div class="container">
-        <h1>Pokedex</h1>
-        <ul data-js="pokedex" class="pokedex"></ul>
-      </div>
+        <div class="sidebar_menu">
+            <div class="search">
+               
+                <input type="search" name="src" id="src" placeholder="Buscar Pokemon">
+                <label for="src" id="label"><i class="fas fa-search" style="margin-right: .4rem; color: #FFF;"></i></label>
+            </div>
+
+        <ul>
+            <a href="html/pokedex.html"><li>PokeDex</li></a>
+           
+        </ul>
+       
+       
+    </header>
+
+    <main>
+        <h1 style="color: #FFF;">PokeInfo</h1>
+
+        <div class="box-pokemon">
+            <div class="pokemon-img">
+                <img src="" alt="" id="pokeimg" width="300">
+
+                <input type="checkbox" name="shiny" id="shiny" style="visibility: hidden;">
+                <label for="shiny"><img src="img/estrela.png" alt="" width="30"></label>
+            </div>
+
+            <div class="pokemon-text">
+                <h2 id="name"></h2>
+                <h3 id="number"></h3>
+                <h3 id="type"></h3>
+                <h3 id='weight'></h3>
+                <h3 id="height"></h3>
+            </div>
+        </div>
+    </main>
     
-      <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
